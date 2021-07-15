@@ -25,7 +25,6 @@ function CardImg(props) {
 </Card.Description>
 <br></br>
 <Footer></Footer>
-<CopyRight>{props.copyright}</CopyRight>
 </Card.Content>    
 </Card>
     );

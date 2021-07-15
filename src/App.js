@@ -22,7 +22,7 @@ return (
     url={data.url}
     date={data.date}
     explanation={data.explanation}
-    copyright ={data.copyright} />
+     />
   </div>
 );
 }
