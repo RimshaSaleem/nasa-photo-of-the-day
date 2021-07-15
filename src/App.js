@@ -21,7 +21,8 @@ return (
     <CardImg title={data.title}
     url={data.url}
     date={data.date}
-    explanation={data.explanation} />
+    explanation={data.explanation}
+    copyright ={data.copyright} />
   </div>
 );
 }

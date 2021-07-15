@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import logo from '../components/nasa-logo.jpg'
 
-function ApodHeader() {
+function MainHeader() {
    const Container = styled.div`
       display: flex;
       align-items: center;
@@ -18,8 +18,8 @@ function ApodHeader() {
        width:100px;
        float:left;
        height:80px;
+       border-radius:5%;
    `
-
    const Header = styled.h1`
        text-align: center;
       font-family: 'Lexend Mega', sans-serif;
@@ -27,7 +27,6 @@ function ApodHeader() {
       margin:20px;
             
    `
-
    return (
       <Container>
           <LogoImg src={logo} /> 
@@ -36,4 +35,4 @@ function ApodHeader() {
    );
 }
 
-export default ApodHeader;
+export default MainHeader;
