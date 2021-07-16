@@ -12,7 +12,7 @@ const DividerExampleHorizontalTable = () => (
     <Divider horizontal>
       <Header as='h3'>
         <Icon name='tag' />
-        Description Of Image 
+        Descriptions Of Image 
       </Header>
     </Divider>
 
