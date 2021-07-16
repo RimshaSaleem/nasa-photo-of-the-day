@@ -2,14 +2,25 @@ import React from 'react';
 import './cards.css';
 import{ Card, Image } from 'semantic-ui-react';
 import styled from 'styled-components';
-import Footer from './footer';
+import Container from './footer';
+import DividerExampleHorizontalTable from './form'
 
 import MainHeader from './Header.js';
+const maincolor =`#9F2B68`;
+const datesmain =`#800000`;
 const Title = styled.h2`
-color:purple;
+color: ${props => (props.maincolor ? maincolor:"#800080")};
+
+&:hover {
+    background-color: #FFC0CB;
+    color:red;
+    transition:2s;
+    transform: scaleY(1.5);
+  }
 `
 const Dates = styled.h2`
-color:red;`
+color: ${props => (props.datesmain ? datesmain:"#FF0000")};`
+
 function CardImg(props) {
     console.log(props);
     return (
@@ -24,8 +35,10 @@ function CardImg(props) {
 {props.explanation}
 </Card.Description>
 <br></br>
-<Footer></Footer>
-</Card.Content>    
+</Card.Content>  
+<DividerExampleHorizontalTable></DividerExampleHorizontalTable>  
+<Container></Container>
+ 
 </Card>
     );
 }
