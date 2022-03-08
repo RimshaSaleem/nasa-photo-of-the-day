@@ -46,6 +46,7 @@ const DividerExampleHorizontalTable = () => (
       </Table.Body>
     </Table>
   </>
+  
 )
 
 export default DividerExampleHorizontalTable

@@ -5,11 +5,12 @@ import styled from 'styled-components';
 import Container from './footer';
 import DividerExampleHorizontalTable from './form'
 
+
 import MainHeader from './Header.js';
-const maincolor =`#9F2B68`;
+// const maincolor =`#9F2B68`;
 const datesmain =`#800000`;
-const Title = styled.h2`
-color: ${props => (props.maincolor ? maincolor:"#800080")};
+const Styled = styled.h2`
+color: ${props => (props.foo ? "yellow":"blue")};
 
 &:hover {
     background-color: #FFC0CB;
@@ -28,7 +29,9 @@ function CardImg(props) {
 <MainHeader></MainHeader>
 <Image src={props.url}/>
 <Card.Content>
-<Title>{props.title}</Title>
+{/* <Button foo>{props.title}</Button> */}
+return <Styled foo={props.foo}>{props.children}</Styled>
+<CardImg foo='bar'>Hello World</CardImg>
 <hr></hr>
 <Dates>Date:{props.date}</Dates>
 <Card.Description className='content'>
