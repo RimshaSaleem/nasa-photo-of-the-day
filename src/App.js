@@ -5,8 +5,9 @@ import CardImg from "./components/cards.js";
 import "./App.css";
 import Footer from "./components/footer.js";
 import  Header from "./components/Header.js";
+import { Container, Form } from "semantic-ui-react";
 // import 'semantic-ui-css/semantic.min.css'
-
+ import ImageBitmapRenderingContext from "./components/form.js"
 function App() {
   const [data, setData] = useState({});
   useEffect(() => {
@@ -22,9 +23,14 @@ return (
     url={data.url}
     date={data.date}
     explanation={data.explanation}
+    
+
      />
   </div>
+  
 );
+
+
 }
 
 export default App;
